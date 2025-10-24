@@ -3,24 +3,32 @@ The purpose of this repository is to demonstrate how Git and GitHub works. This 
 
 How to setup a Git repository:
 
-- Install Git on your local machine and create a GitHub account.
+- Navigate to this site (https://git-scm.com/install/), download and install the latest version of Git for your device.
 
-- Create a local Git repository on your computer (git init).
+- Create a new folder on your PC in a location of your choosing. This will be used as your local git repository.
 
-- Create a new (test) branch in your repository (git branch -b test).
+- Open Git Bash. Using the command line interface, navigate to the directory you created using the cd command.
 
-- Add a new file to your repository (git add).
+- From there, run the git init command. This will initialize your directory into a git repository.
 
-- Commit the new file with a clear message (git commit -m)
+- Run the git checkout -b (branch_name). This will create a new branch in your repository and switch you over to work in the created branch.
 
-- Push the new branch to GitHub.
+- Create a new text or Python file using a text editor (Notepad), and save the file in your repository.
 
-- Choose one classmate and add them as a Collaborator on your GitHub repository. 
+- Run the git add (file_name) command to add the file to Git. This will let Git recognize your added file that you placed in the folder.
 
-- Create a Pull Request (PR) and assign your collaborator as the Reviewer. 
+- Commit the new file with a clear message using the command git commit -m (message). This will document any changes with your file.
 
-- Wait for your collaborator to review and approve your PR. 
+- Create a new repository on Github and push the local repository to it using the command git remote add origin (Github Repo URL), then the command git push -u origin master.
 
-- Once approved, merge the new branch into the main branch.
+- Push the new branch to GitHub using the command git push origin (branch_name).
+
+- Choose someone to collaborate with and add them as a Collaborator on your GitHub repository from the Settings tab. 
+
+- Create a Pull Request (PR) and assign your Collaborator as the Reviewer. 
+
+- Wait for your Collaborator to review your request and approve your PR. 
+
+- Once your Collaborator has approved your PR, merge the new branch into the master branch, and delete the created branch.
 
 Collaborators: Andrew Blair & Kimberly Bobb
